@@ -4,11 +4,16 @@
   "description": "a website for training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "http-server ."
   },
   "author": "moriishikaa",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
   }
 }
