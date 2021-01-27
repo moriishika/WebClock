@@ -1437,7 +1437,7 @@ eval("/* module decorator */ module = __webpack_require__.nmd(module);\n//! mome
 /*!*****************************!*\
   !*** ./javascript/index.js ***!
   \*****************************/
-eval("const moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\r\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")\r\n\r\nconst displayTime = () => {\r\n    moment.locale(\"id\");\r\n    $(\".time\").text(moment().format(\"LTS\"));\r\n    $(\".date\").text(moment().format(\"LL\"));\r\n};\r\n \r\nconst updateTime = () => {\r\n    displayTime();\r\n    setTimeout(updateTime, 1000)\r\n};\r\n \r\nupdateTime();\n\n//# sourceURL=webpack://webclock/./javascript/index.js?");
+eval("var moment = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\r\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")\r\nconst displayTime = () => {\r\n    moment.locale(\"id\");\r\n    $(\".time\").text(moment().format(\"LTS\"));\r\n    $(\".date\").text(moment().format(\"LL\"));\r\n};\r\n \r\nconst updateTime = () => {\r\n    displayTime();\r\n    setTimeout(updateTime, 1000)\r\n};\r\n \r\nupdateTime();\n\n//# sourceURL=webpack://webclock/./javascript/index.js?");
 })();
 
 /******/ })()
